@@ -3,34 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple AJAX Example</title>
-    <!-- Include jQuery library -->
+    <title>COVID-19 Cases per Population</title>
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <h1>Simple AJAX Example</h1>
-
-    <div id="data-container">
-      <!-- Data will be displayed here -->
+    <div style="width: 90%; margin: auto">
+      <canvas id="covidChart"></canvas>
     </div>
-
-    <script>
-      $(document).ready(function () {
-        // Make an AJAX call to a fake JSON API
-        $.ajax({
-          url: "http://127.0.0.1:5000/api/get_country_percentage", // Replace with your API endpoint
-          method: "GET",
-          dataType: "json",
-          success: function (data) {
-            console.log(data);
-          },
-          error: function () {
-            // Handle any errors here
-            var dataContainer = $("#data-container");
-            dataContainer.html("<p>Error loading data</p>");
-          },
-        });
-      });
-    </script>
+    <script src="chart.js"></script>
   </body>
 </html>
+
+<script>
+  function genCasesChart(covidData) {
+    const canvas = document.getElementById("covidChart");
+    const ctx = canvas.getContext("2d");
+
+    // Extract labels (countries) and data (percentages) from the covidData array
+    const labels = covidData.map((item) => item.country);
+    const casesData = covidData.map((item) => item.percentage);
+    const deathsData = covidData.map((item) => item.deathsPercentage);
+    const vaccineData = covidData.map((item) => item.percentVacinated);
+
+    // Create the chart
+    new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            label: "Percentage Cases Per Population",
+            data: casesData,
+            backgroundColor: "rgba(75, 192, 192, 0.7)",
+          },
+          {
+            label: "Percent Deaths Per Population",
+            data: deathsData,
+            backgroundColor: "rgba(255, 99, 132, 0.7)",
+          },
+          {
+            label: "Percent Vaccinated Per Population",
+            data: vaccineData,
+            backgroundColor: "rgba(255, 255, 0, 0.7)",
+          },
+        ],
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: "Percentage of Cases",
+            },
+          },
+        },
+      },
+    });
+  }
+
+  function getData() {
+    $.ajax({
+      url: "http://127.0.0.1:5000/api/get_country_percentage", // Replace with your API endpoint
+      method: "GET",
+      dataType: "json",
+      success: function (data) {
+        var covidData = [];
+        for (var row of data) {
+          var country = row[1].trim();
+          var percentCases = parseFloat(row[0]).toFixed(2);
+          var percentDeaths = parseFloat(row[2]).toFixed(2);
+          var percentVacinated = parseFloat(row[3]).toFixed(2);
+          covidData.push({
+            country: country,
+            percentage: percentCases,
+            deathsPercentage: percentDeaths,
+            percentVacinated: percentVacinated,
+          });
+        }
+        console.log(covidData);
+        genCasesChart(covidData);
+      },
+      error: function () {
+        // Handle any errors here
+        var dataContainer = $("#data-container");
+        dataContainer.html("<p>Error loading data</p>");
+      },
+    });
+  }
+
+  getData();
+</script>

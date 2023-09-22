@@ -8,7 +8,7 @@ def _open_db():
 
 def get_country_percentage():
     cursor = _open_db()
-    cursor.execute("SELECT * FROM Country_percentage")
+    cursor.execute("SELECT * FROM Country_percentage order by location")
     results = cursor.fetchall()
     data_list = []
     for row in results:
