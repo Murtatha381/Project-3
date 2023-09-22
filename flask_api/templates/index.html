@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple AJAX Example</title>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>Simple AJAX Example</h1>
+
+    <div id="data-container">
+      <!-- Data will be displayed here -->
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        // Make an AJAX call to a fake JSON API
+        $.ajax({
+          url: "http://127.0.0.1:5000/api/get_country_percentage", // Replace with your API endpoint
+          method: "GET",
+          dataType: "json",
+          success: function (data) {
+            console.log(data);
+          },
+          error: function () {
+            // Handle any errors here
+            var dataContainer = $("#data-container");
+            dataContainer.html("<p>Error loading data</p>");
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
