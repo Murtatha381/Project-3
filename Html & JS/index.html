@@ -8,20 +8,75 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1> A Retrospective Look on Covid-19 </h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 jumbotron text-center">
+          <h1> A Retrospective Look on Covid-19 </h1>
+          <p>Use the interactive charts below to explore the dataset</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-2">
-      <div class="well">
-        <label for="dropdown">Countries:</label>
-        <select id="selDataset" onchange="optionChanged(this.value)"></select>
-      </div> 
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <label for="dropdown">Countries:</label>
+          <select id="dropdown" onchange="option(this.value)"></select>
+        </div>
+        <div class="well">
+          <input type="file" id="csvFile" accept=".csv" onchange="handleFile(this.files[0])">
+        </div>
+      </div>
+    </div>
+    <script>
+      // Function to handle dropdown selection change
+      function option(selectedValue) {
+        // Here, you can perform actions based on the selectedValue
+        console.log("Selected country: " + selectedValue);
+      }
+
+      // Function to handle CSV file upload
+      function handleFile(file) {
+        if (file) {
+          var reader = new FileReader();
+          reader.onload = function (event) {
+            var csvData = event.target.result;
+            var countries = extractCountriesFromCSV(csvData);
+            populateDropdown(countries);
+          };
+          reader.readAsText(file);
+        }
+      }
+
+      // Function to extract country names from CSV data
+      function extractCountriesFromCSV(csvData) {
+        var lines = csvData.split("\n");
+        var countries = [];
+
+        for (var i = 1; i < lines.length; i++) {
+          var parts = lines[i].split(",");
+          if (parts.length > 0) {
+            var country = parts[0].trim(); // Assuming the country is in the first column
+            countries.push(country);
+          }
+        }
+
+        return countries;
+      }
+
+      // Function to populate the dropdown
+      function populateDropdown(countries) {
+        var dropdown = document.getElementById("dropdown");
+        dropdown.innerHTML = ""; // Clear existing options
+
+        for (var i = 0; i < countries.length; i++) {
+          var option = document.createElement("option");
+          option.value = countries[i];
+          option.text = countries[i];
+          dropdown.appendChild(option);
+        }
+      }
+    </script>
+
       <!-- Include Chart.js library -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
