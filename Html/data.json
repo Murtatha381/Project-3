@@ -1,0 +1,272 @@
+[
+  {
+    "location": "Luxembourg",
+    "population": 647601,
+    "%_deaths_per_population": 0.12,
+    "%_vaccinated_per_population": 5.85,
+    "%_boosters_per_population": 0,
+    "%_hosps_per_population": 0.02,
+    "%_cases_per_population": 9.86,
+    "%_diabetes_prevalence": 4.42
+  },
+  {
+    "location": "Cyprus",
+    "population": 896007,
+    "%_deaths_per_population": 0.08,
+    "%_vaccinated_per_population": 70.23,
+    "%_boosters_per_population": 45.12,
+    "%_hosps_per_population": 0.02,
+    "%_cases_per_population": 27.97,
+    "%_diabetes_prevalence": 9.24
+  },
+  {
+    "location": "Portugal",
+    "population": 10270857,
+    "%_deaths_per_population": 0.21,
+    "%_vaccinated_per_population": 85.52,
+    "%_boosters_per_population": 61.21,
+    "%_hosps_per_population": 0.01,
+    "%_cases_per_population": 34.05,
+    "%_diabetes_prevalence": 9.85
+  },
+  {
+    "location": "Australia",
+    "population": 26177410,
+    "%_deaths_per_population": 0.03,
+    "%_vaccinated_per_population": 81.55,
+    "%_boosters_per_population": 50,
+    "%_hosps_per_population": 0.01,
+    "%_cases_per_population": 17.79,
+    "%_diabetes_prevalence": 5.07
+  },
+  {
+    "location": "United Kingdom",
+    "population": 67508936,
+    "%_deaths_per_population": 0.26,
+    "%_vaccinated_per_population": 73.92,
+    "%_boosters_per_population": 58.67,
+    "%_hosps_per_population": 0.01,
+    "%_cases_per_population": 32.93,
+    "%_diabetes_prevalence": 4.28
+  },
+  {
+    "location": "Canada",
+    "population": 38454328,
+    "%_deaths_per_population": 0.11,
+    "%_vaccinated_per_population": 81.67,
+    "%_boosters_per_population": 55.87,
+    "%_hosps_per_population": 0.01,
+    "%_cases_per_population": 10.08,
+    "%_diabetes_prevalence": 7.37
+  },
+  {
+    "location": "South Korea",
+    "population": 51815808,
+    "%_deaths_per_population": 0.05,
+    "%_vaccinated_per_population": 85.5,
+    "%_boosters_per_population": 72.64,
+    "%_hosps_per_population": 0,
+    "%_cases_per_population": 35.2,
+    "%_diabetes_prevalence": 6.8
+  },
+  {
+    "location": "Spain",
+    "population": 47558632,
+    "%_deaths_per_population": 0.23,
+    "%_vaccinated_per_population": 85.24,
+    "%_boosters_per_population": 53.14,
+    "%_hosps_per_population": 0.01,
+    "%_cases_per_population": 26.39,
+    "%_diabetes_prevalence": 7.17
+  },
+  {
+    "location": "Finland",
+    "population": 5540745,
+    "%_deaths_per_population": 0.09,
+    "%_vaccinated_per_population": 78.18,
+    "%_boosters_per_population": 59,
+    "%_hosps_per_population": 0.01,
+    "%_cases_per_population": 20.37,
+    "%_diabetes_prevalence": 5.76
+  },
+  {
+    "location": "Denmark",
+    "population": 5882259,
+    "%_deaths_per_population": 0.11,
+    "%_vaccinated_per_population": 80.59,
+    "%_boosters_per_population": 61.19,
+    "%_hosps_per_population": 0,
+    "%_cases_per_population": 53.54,
+    "%_diabetes_prevalence": 6.41
+  },
+  {
+    "location": "Austria",
+    "population": 8939617,
+    "%_deaths_per_population": 0.22,
+    "%_vaccinated_per_population": 74.47,
+    "%_boosters_per_population": 58.59,
+    "%_hosps_per_population": 0.01,
+    "%_cases_per_population": 48.44,
+    "%_diabetes_prevalence": 6.35
+  },
+  {
+    "location": "Bolivia",
+    "population": 12224114,
+    "%_deaths_per_population": 0.18,
+    "%_vaccinated_per_population": 49.06,
+    "%_boosters_per_population": 13.39,
+    "%_hosps_per_population": 0,
+    "%_cases_per_population": 7.48,
+    "%_diabetes_prevalence": 6.89
+  },
+  {
+    "location": "Netherlands",
+    "population": 17564020,
+    "%_deaths_per_population": 0.13,
+    "%_vaccinated_per_population": 68,
+    "%_boosters_per_population": 52.84,
+    "%_hosps_per_population": 0,
+    "%_cases_per_population": 46.22,
+    "%_diabetes_prevalence": 5.29
+  },
+  {
+    "location": "France",
+    "population": 67813000,
+    "%_deaths_per_population": 0.21,
+    "%_vaccinated_per_population": 78.09,
+    "%_boosters_per_population": 57.64,
+    "%_hosps_per_population": 0.02,
+    "%_cases_per_population": 43.01,
+    "%_diabetes_prevalence": 4.77
+  },
+  {
+    "location": "United States",
+    "population": 338289856,
+    "%_deaths_per_population": 0.3,
+    "%_vaccinated_per_population": 65.96,
+    "%_boosters_per_population": 36.6,
+    "%_hosps_per_population": 0.01,
+    "%_cases_per_population": 25.17,
+    "%_diabetes_prevalence": 10.79
+  },
+  {
+    "location": "Estonia",
+    "population": 1326064,
+    "%_deaths_per_population": 0.2,
+    "%_vaccinated_per_population": 64.49,
+    "%_boosters_per_population": 36.63,
+    "%_hosps_per_population": 0,
+    "%_cases_per_population": 43.88,
+    "%_diabetes_prevalence": 4.02
+  },
+  {
+    "location": "Slovakia",
+    "population": 5643455,
+    "%_deaths_per_population": 0.36,
+    "%_vaccinated_per_population": 45.67,
+    "%_boosters_per_population": 12.06,
+    "%_hosps_per_population": 0,
+    "%_cases_per_population": 31.76,
+    "%_diabetes_prevalence": 7.29
+  },
+  {
+    "location": "Malaysia",
+    "population": 33938216,
+    "%_deaths_per_population": 0.11,
+    "%_vaccinated_per_population": 80.27,
+    "%_boosters_per_population": 47.91,
+    "%_hosps_per_population": 0,
+    "%_cases_per_population": 13.37,
+    "%_diabetes_prevalence": 16.74
+  },
+  {
+    "location": "Belgium",
+    "population": 11655923,
+    "%_deaths_per_population": 0.27,
+    "%_vaccinated_per_population": 78.56,
+    "%_boosters_per_population": 65.66,
+    "%_hosps_per_population": 0.01,
+    "%_cases_per_population": 36.02,
+    "%_diabetes_prevalence": 4.29
+  },
+  {
+    "location": "Ireland",
+    "population": 5023108,
+    "%_deaths_per_population": 0.15,
+    "%_vaccinated_per_population": 80.62,
+    "%_boosters_per_population": 61.35,
+    "%_hosps_per_population": 0.01,
+    "%_cases_per_population": 31.46,
+    "%_diabetes_prevalence": 3.28
+  },
+  {
+    "location": "Switzerland",
+    "population": 8740471,
+    "%_deaths_per_population": 0.15,
+    "%_vaccinated_per_population": 68.66,
+    "%_boosters_per_population": 43.36,
+    "%_hosps_per_population": 0.01,
+    "%_cases_per_population": 42.39,
+    "%_diabetes_prevalence": 5.59
+  },
+  {
+    "location": "Japan",
+    "population": 123951696,
+    "%_deaths_per_population": 0.03,
+    "%_vaccinated_per_population": 82.55,
+    "%_boosters_per_population": 62.94,
+    "%_hosps_per_population": 0,
+    "%_cases_per_population": 7.4,
+    "%_diabetes_prevalence": 5.72
+  },
+  {
+    "location": "Italy",
+    "population": 59037472,
+    "%_deaths_per_population": 0.28,
+    "%_vaccinated_per_population": 81.17,
+    "%_boosters_per_population": 69.39,
+    "%_hosps_per_population": 0.01,
+    "%_cases_per_population": 30.42,
+    "%_diabetes_prevalence": 4.78
+  },
+  {
+    "location": "Slovenia",
+    "population": 2119843,
+    "%_deaths_per_population": 0.37,
+    "%_vaccinated_per_population": 57.65,
+    "%_boosters_per_population": 30.99,
+    "%_hosps_per_population": 0,
+    "%_cases_per_population": 48.72,
+    "%_diabetes_prevalence": 7.25
+  },
+  {
+    "location": "Czechia",
+    "population": 10493990,
+    "%_deaths_per_population": 0.38,
+    "%_vaccinated_per_population": 65.54,
+    "%_boosters_per_population": 40.29,
+    "%_hosps_per_population": 0,
+    "%_cases_per_population": 40.1,
+    "%_diabetes_prevalence": 6.82
+  },
+  {
+    "location": "Israel",
+    "population": 9449000,
+    "%_deaths_per_population": 0.12,
+    "%_vaccinated_per_population": 65.07,
+    "%_boosters_per_population": 56.36,
+    "%_hosps_per_population": 0.01,
+    "%_cases_per_population": 45.1,
+    "%_diabetes_prevalence": 6.74
+  },
+  {
+    "location": "South Africa",
+    "population": 59893884,
+    "%_deaths_per_population": 0.17,
+    "%_vaccinated_per_population": 31.72,
+    "%_boosters_per_population": 5.68,
+    "%_hosps_per_population": 0,
+    "%_cases_per_population": 6.66,
+    "%_diabetes_prevalence": 5.52
+  }
+]
