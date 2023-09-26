@@ -1,13 +1,20 @@
-from flask import Flask, request, jsonify
+import os
+import sys
+from flask import Flask, render_template, request, jsonify
+project_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(project_dir)
+import get_data
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 # Define a simple route that accepts GET requests
-
-
-@app.route('/api/hello', methods=['GET'])
-def hello():
-    return jsonify(message='Hello, World!')
+@app.route('/api/get_country_percentage', methods=['GET'])
+def country_percentage():
+    return jsonify(get_data.get_country_percentage())
 
 
 @app.route('/api/post_example', methods=['POST'])
