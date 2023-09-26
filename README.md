@@ -62,7 +62,10 @@ Which countries had the lowest fatalities?
    
 What is the median age for those who tested positive?
     - The average age of people who got tested positive were about 40.
-    <img width="509" alt="Screenshot 2023-09-25 at 10 25 59 PM" src="https://github.com/Murtatha381/Project-3/assets/128860080/173e49f2-006e-48cd-bcc9-9626c7fcf9d4">
+
+
+
+ <img width="509" alt="Screenshot 2023-09-25 at 10 25 59 PM" src="https://github.com/Murtatha381/Project-3/assets/128860080/173e49f2-006e-48cd-bcc9-9626c7fcf9d4">
 
 
    
